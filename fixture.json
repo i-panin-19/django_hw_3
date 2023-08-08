@@ -1,0 +1,167 @@
+[
+{
+  "model": "shop.category",
+  "pk": 1,
+  "fields": {
+    "name": "Шоколад",
+    "description": "Шоколадные плитки, батончики"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 2,
+  "fields": {
+    "name": "Молоко",
+    "description": "Молоко цельное, пастеризованное"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 3,
+  "fields": {
+    "name": "Печенье",
+    "description": "Печенье весовое, фасованное"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 4,
+  "fields": {
+    "name": "Фрукты",
+    "description": "заморские и местные"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 5,
+  "fields": {
+    "name": "Пиво",
+    "description": "стекло, банки, кеги"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 6,
+  "fields": {
+    "name": "Мороженое",
+    "description": "сливочное, с заменителем ж.жира"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 1,
+  "fields": {
+    "name": "Аленка",
+    "description": "100г. плитка",
+    "photo": "",
+    "category": 1,
+    "purchase_price": 109,
+    "date_creation": "2023-08-08",
+    "date_change": "2023-08-08"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 2,
+  "fields": {
+    "name": "Twix",
+    "description": "80г. батончик",
+    "photo": "",
+    "category": 1,
+    "purchase_price": 78,
+    "date_creation": "2023-08-08",
+    "date_change": "2023-08-08"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 3,
+  "fields": {
+    "name": "Alpen Gold",
+    "description": "85г. плитка",
+    "photo": "",
+    "category": 1,
+    "purchase_price": 73,
+    "date_creation": "2023-08-08",
+    "date_change": "2023-08-08"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 4,
+  "fields": {
+    "name": "Семёнишна",
+    "description": "1000мл. 2,5%, пастеризованное",
+    "photo": "",
+    "category": 2,
+    "purchase_price": 85,
+    "date_creation": "2023-08-08",
+    "date_change": "2023-08-08"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 5,
+  "fields": {
+    "name": "Домик в деревне",
+    "description": "900мл. 3,2%, ультрапастеризованное",
+    "photo": "",
+    "category": 2,
+    "purchase_price": 87,
+    "date_creation": "2023-08-08",
+    "date_change": "2023-08-08"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 6,
+  "fields": {
+    "name": "Сельское счастье",
+    "description": "1000мл. 2,5%, цельное",
+    "photo": "",
+    "category": 1,
+    "purchase_price": 93,
+    "date_creation": "2023-08-08",
+    "date_change": "2023-08-08"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 7,
+  "fields": {
+    "name": "Услада",
+    "description": "400г. с абрикосовым вкусом",
+    "photo": "",
+    "category": 3,
+    "purchase_price": 107,
+    "date_creation": "2023-08-08",
+    "date_change": "2023-08-08"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 8,
+  "fields": {
+    "name": "Версаль",
+    "description": "500г. с шоколадной крошкой",
+    "photo": "",
+    "category": 3,
+    "purchase_price": 120,
+    "date_creation": "2023-08-08",
+    "date_change": "2023-08-08"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 9,
+  "fields": {
+    "name": "К кофе",
+    "description": "600г. злаковые",
+    "photo": "",
+    "category": 3,
+    "purchase_price": 75,
+    "date_creation": "2023-08-08",
+    "date_change": "2023-08-08"
+  }
+}
+]
