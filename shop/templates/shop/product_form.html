@@ -1,0 +1,22 @@
+{% extends 'shop/base.html' %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-header">
+                Добавить новый продукт
+            </div>
+            <div class="card-body">
+                <from method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-outline-success">Добавить</button>
+                </from>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

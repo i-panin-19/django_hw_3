@@ -4,6 +4,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, CreateView, DetailView, UpdateView, DeleteView
 
+from shop.forms import ProductForm
 from shop.models import Product, Category, BlogEntry
 
 '''def index(request):
@@ -89,3 +90,9 @@ def toggle_activity(request, pk):
     blog_item.save()
 
     return redirect(reverse('list'))
+
+
+class ProductCreateView(CreateView):
+    model = Product
+    form_class = ProductForm
+    success_url = reverse_lazy('index')

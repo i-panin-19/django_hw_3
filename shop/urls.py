@@ -1,7 +1,7 @@
 from django.urls import path
 
 from shop.views import IndexListView, BlogCreateView, BlogListView, BlogDetailView, BlogUpdateView, BlogDeleteView, \
-    toggle_activity
+    toggle_activity, ProductCreateView
 
 urlpatterns = [
     path('', IndexListView.as_view(), name='index'),
@@ -11,4 +11,5 @@ urlpatterns = [
     path('edit/<int:pk>/', BlogUpdateView.as_view(), name='edit'),
     path('delete/<int:pk>/', BlogDeleteView.as_view(), name='delete'),
     path('publication/<int:pk>/', toggle_activity, name='toggle_activity'),
+    path('product_form/', ProductCreateView.as_view(), name='product_create'),
 ]
