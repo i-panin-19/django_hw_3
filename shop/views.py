@@ -4,8 +4,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, CreateView, DetailView, UpdateView, DeleteView
 
-from shop.forms import ProductForm
-from shop.models import Product, Category, BlogEntry
+from shop.forms import ProductForm, VersionForm
+from shop.models import Product, Category, BlogEntry, Version
 
 '''def index(request):
     context = {
@@ -96,3 +96,32 @@ class ProductCreateView(CreateView):
     model = Product
     form_class = ProductForm
     success_url = reverse_lazy('index')
+
+
+class ProductUpdateView(UpdateView):
+    model = Product
+    form_class = ProductForm
+    success_url = reverse_lazy('index')
+
+
+class VersionListView(ListView):
+    model = Version
+    context_object_name = 'version_list'
+    extra_context = {'title': 'Версии'}
+
+
+class VersionCreateView(CreateView):
+    model = Version
+    form_class = VersionForm
+    success_url = reverse_lazy('list_version')
+
+
+class VersionUpdateView(UpdateView):
+    model = Version
+    form_class = VersionForm
+    success_url = reverse_lazy('list_version')
+
+
+class VersionDeleteView(DeleteView):
+    model = Version
+    success_url = reverse_lazy('list_version')

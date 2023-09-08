@@ -1,0 +1,31 @@
+{% extends 'shop/base.html' %}
+
+{% load my_tags %}
+
+{% block content %}
+
+<div class="row">
+    {% for object in version_list %}
+    {% if object.active_ver %}
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                    <h4 class="card-title">{{ object.product }}</h4>
+                    <h4 class="card-title">Номер версии: {{ object.num_version }}</h4>
+                    <p class="card-text">{{ object.name_version }}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="{% url 'update_version' object.pk %}"
+                                type="button" class="btn btn-outline-secondary">Edit</a>
+                            <a href="{% url 'delete_version' object.pk %}"
+                                type="button" class="btn btn-outline-danger">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
+{% endblock %}
